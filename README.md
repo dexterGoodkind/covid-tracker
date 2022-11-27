@@ -1,12 +1,14 @@
 # covid-tracker
 Web app to track COVID-19 in different regions over time
 
-The web app uses python3 (flask) as a backend. The following python packages must be installed for the web app to run. 
+## Module requirements
+The web app uses python3 (flask) as a backend. The following python modules must be installed for the web app to run:
 1. uk_covid19 (SDK decribed on https://coronavirus.data.gov.uk/details/developers-guide/main-api) 
 2. flask
 3. numpy
 4. matplotlib
 
+## Running the web app
 To run the web app:
 1. Download this repo. 
 2. Run main.py. A warning stating that this is a development server will display in the terminal. This can be ignored. 
