@@ -144,3 +144,22 @@ def image():
 # run app:
 if __name__ == "__main__":
     app.run()
+    
+"""
+Some brief ideas on testing (there wasn't enough time to implement all my
+ideas for testing)
+
+The software was tested and adjusted for robustness mostly by simply trying
+different edge cases when the app was running. For example, seeing what happens
+when the start date inputted is later than the end date inputted. 
+
+One could implement unit tests, for example, checking that the size of the 
+data frame changes as expected with changing dates (i.e. smaller time windows
+lead to smaller data frames).
+
+One could also implement unit tests checking that data exists in different 
+cases (i.e. a non-empty data frame is produced). This would become more important
+when different area types and structure metrics are used 
+(since not all area types are compatible with all structure metrics)
+
+"""
