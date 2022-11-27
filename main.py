@@ -4,7 +4,8 @@ import numpy as np
 from flask import Flask, render_template, request
 
 # for plotting:
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
 import base64 
 import io
 
@@ -120,7 +121,8 @@ def image():
                                          from_date=from_date, to_date=to_date)
     
     # create and edit matplotlib figure (to make it more readable):
-    fig = plt.figure()
+    #fig = plt.figure()
+    fig = Figure()
     fig.supxlabel("date")
     fig.supylabel(dataStr2names[data_to_display])
     ax = fig.subplots()
