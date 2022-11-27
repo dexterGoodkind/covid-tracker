@@ -1,0 +1,66 @@
+<html>
+
+<!--HTML code for home page-->
+
+<body>
+    <h1>COVID-19 case tracker by area</h1>
+</body>
+
+
+<!-- getting data from form based on
+    https://stackoverflow.com/questions/32019733/getting-value-from-select-tag-using-flask-->
+
+<form class="form-inline" method="POST" action="{{ url_for('image') }}">
+    <div class="form-group">
+        <div class="input-group">
+            <span class="input-group-addon">Choose area type</span>
+            <select name="areaType" id="areaType">
+                <option value="region">Region</option>
+                <!<option value="nation">Nation</option>!>
+            </select><br>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">Choose area name</span>
+            <select name="areaName" id="areaName">
+                <option value="North East">North East (England)</option>
+                <option value="North West">North West (England)</option>
+                <option value="Yorkshire and The Humber">Yorkshire and The Humber</option>
+                <option value="East Midlands">East Midlands (England)</option>
+                <option value="West Midlands">West Midlands (England)</option>
+                <option value="East of England">East of England</option>
+                <option value="London">London</option>
+                <option value="South East">South East (England)</option>
+                <option value="South West">South West (England)</option>
+            </select><br>
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">Choose metric</span>
+            <select name="data_to_display" id="data_to_display">
+                <option value="newCasesByPublishDate">New cases by publish date</option>
+                <option value="newDeaths28DaysByDeathDate">New deaths within 28 days of a positive test by death date
+                </option>
+            </select><br>
+        </div>
+
+        <!--now trying to do a start and end date:-->
+
+        <div class="input-group">
+            <label for="start_date">Start date (optional):</label>
+            <input type="date" id="start_date" name="start_date">
+        </div>
+
+        <div class="input-group">
+            <label for="end_date">End date (optional):</label>
+            <input type="date" id="end_date" name="end_date">
+        </div>
+
+    </div>
+
+
+
+    <button type="submit" class="btn btn-default">Go</button>
+    </div>
+</form>
+
+</html>
