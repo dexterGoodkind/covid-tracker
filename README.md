@@ -15,6 +15,8 @@ To run the web app:
 2. Run main.py. A warning stating that this is a development server will display in the terminal. This can be ignored. 
 3. While main.py is running, copy and paste the link displayed in the terminal into your web browser. 
 
+The user should press CTRL+C on the terminal when they're ready to quit the app.
+
 ## Tips
 Within the web app, the user can go back to the home page using their browser's back button. Using this, they can change the start and end date to "zoom in/out" on the data they're interested in. 
 
